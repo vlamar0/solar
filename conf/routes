@@ -1,0 +1,1 @@
+GET     /search                  controllers.SolarController.search(tag: List[String])
