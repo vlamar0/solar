@@ -1,6 +1,6 @@
 package services
 
-import com.google.inject.{Inject, Singleton}
+import com.google.inject.Inject
 import models.AnswersStatistic
 import play.api.libs.json.{JsError, JsSuccess, Json}
 import play.api.libs.ws.{WSClient, WSResponse}
@@ -8,7 +8,6 @@ import play.api.libs.ws.{WSClient, WSResponse}
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext
 
-@Singleton
 class StackOverFlowService @Inject()(
   ws: WSClient
 )(implicit ec: ExecutionContext) {
